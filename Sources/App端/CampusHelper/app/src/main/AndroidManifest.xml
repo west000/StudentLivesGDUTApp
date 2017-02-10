@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tzh.campushelper">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_login"/>
+        <activity
+            android:name=".ui.SlashActivity"
+            android:theme="@style/SlashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity"/>
+        <activity
+            android:name=".ui.edu.login.EducationSystemLoginActivity"
+            android:label="@string/title_education_system_login"/>
+        <activity
+            android:name=".ui.edu.examtime.ExamTimeActivity"
+            android:label="@string/title_exam_time"/>
+        <activity
+            android:name=".ui.edu.gradeexam.GradeExamActivity"
+            android:label="@string/title_grade_exam"/>
+        <activity
+            android:name=".ui.edu.timetable.TimeTableActivity"
+            android:label="@string/title_time_table"/>
+        <activity
+            android:name=".ui.edu.EduSystemNavigationActivity"
+            android:label="@string/title_education_system"/>
+        <activity
+            android:name=".ui.edu.score.ScoreActivity"
+            android:label="@string/title_score"/>
+        <activity
+            android:name=".ui.communityinfo.CommunityInfoActivity"
+            android:label="@string/title_community_info"/>
+        <activity
+            android:name=".ui.campusnews.CampusNewsActivity"
+            android:label="@string/title_campus_news"/>
+        <activity
+            android:name=".ui.user.editinfo.EditUserInfoActivity"
+            android:label="@string/title_edit_user_info"/>
+        <activity
+            android:name=".ui.repair.reportrepair.ReportRepairActivity"
+            android:label="@string/title_report_repair"/>
+        <activity
+            android:name=".ui.repair.repairstate.RepairStateActivity"
+            android:label="@string/title_repair_state"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".ui.ServerSettingActivity"/>
+        <activity android:name=".ui.WebViewActivity"/>
+    </application>
+
+</manifest>

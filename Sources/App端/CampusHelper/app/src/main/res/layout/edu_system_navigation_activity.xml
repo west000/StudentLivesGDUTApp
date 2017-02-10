@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edu_system_navigation_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tzh.campushelper.ui.edu.EduSystemNavigationActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/query_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:onClick="onClick"
+        app:elevation="@dimen/edu_sys_nav_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/grade_exam"
+        app:layout_constraintRight_toRightOf="@+id/exam_time">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/edu_sys_nav_pad">
+
+            <ImageView
+                android:layout_width="@dimen/edu_sys_nav_img_size"
+                android:layout_height="@dimen/edu_sys_nav_img_size"
+                android:src="@drawable/ic_score"
+                android:tint="@color/md_blue500"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_score"
+                android:textSize="@dimen/edu_sys_nav_text_font_size"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/grade_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="onClick"
+        app:elevation="@dimen/edu_sys_nav_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/edu_sys_nav_pad">
+
+            <TextView
+
+                android:layout_width="@dimen/edu_sys_nav_img_size"
+                android:layout_height="@dimen/edu_sys_nav_img_size"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:src="@drawable/ic_rate"
+                android:text="CET"
+                android:textColor="@color/md_amberA300"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_grade_exam"
+                android:textSize="@dimen/edu_sys_nav_text_font_size"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/exam_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onClick"
+        app:elevation="@dimen/edu_sys_nav_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/edu_sys_nav_pad">
+
+            <ImageView
+                android:layout_width="@dimen/edu_sys_nav_img_size"
+                android:layout_height="@dimen/edu_sys_nav_img_size"
+                android:src="@drawable/ic_exam_time"
+                android:tint="@color/md_green500"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_exam_time"
+                android:textSize="@dimen/edu_sys_nav_text_font_size"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/time_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:onClick="onClick"
+        app:elevation="@dimen/edu_sys_nav_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/grade_exam"
+        app:layout_constraintRight_toRightOf="@+id/grade_exam">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/edu_sys_nav_pad"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/edu_sys_nav_img_size"
+                android:layout_height="@dimen/edu_sys_nav_img_size"
+                android:src="@drawable/ic_time_table"
+                android:tint="@color/md_red500"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_time_table"
+                android:textSize="@dimen/edu_sys_nav_text_font_size"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_edu_system"
+        android:tint="@color/md_grey600"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

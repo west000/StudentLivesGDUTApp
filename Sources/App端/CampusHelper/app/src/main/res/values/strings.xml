@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">校园助手</string>
+    <string name="title_login">登录/注册</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_student_id">学号</string>
+    <string name="prompt_user">账号</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_register">注册</string>
+    <string name="title_education_system">教务管理系统</string>
+    <string name="title_education_system_login">教务管理系统登录</string>
+    <string name="title_exam_time">考试时间</string>
+    <string name="title_grade_exam">等级考试</string>
+    <string name="title_time_table">课程表</string>
+    <string name="title_score">成绩查询</string>
+    <string name="title_community_info">社团信息</string>
+    <string name="title_campus_news">校内新闻</string>
+
+    <string name="exit_app">再按一次退出</string>
+
+    <string name="title_courses">Courses</string>
+    <string name="query_by_semester">按学期查询</string>
+    <string name="query_by_year">按学年查询</string>
+    <string name="empty">这里什么都没有</string>
+    <string name="no_more">没有更多内容</string>
+    <string name="news_date">%1$s|%2$s</string>
+    <string name="query">查询</string>
+    <string name="week">周</string>
+    <string name="the">第</string>
+
+    <!-- 学期 -->
+    <string-array name="semester">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>2014–2015</item>
+        <item>2015–2016</item>
+        <item>2016–2017</item>
+    </string-array>
+
+    <string-array name="weeks">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+    <string name="title_edit_user_info">修改信息</string>
+    <string name="title_report_repair">宿舍报修</string>
+    <string name="title_repair_state">宿舍报修</string>
+
+    <string name="nick_name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="signature">个性签名</string>
+    <string name="signature_hint">个性签名(140字)</string>
+    <string name="telephone">手机号</string>
+    <string name="faculty">学院</string>
+    <string name="specialty">专业</string>
+    <string name="grade">年级</string>
+    <string name="dormitory">宿舍</string>
+    <string name="description_hint">描述(140字以内)</string>
+    <string name="real_name">姓名</string>
+    <string name="repair_project">报修项目</string>
+    <string name="prompt_host">HOST</string>
+    <string name="prompt_port">PORT</string>
+    <string name="ok">确定</string>
+
+</resources>

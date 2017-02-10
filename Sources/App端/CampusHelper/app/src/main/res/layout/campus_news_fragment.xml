@@ -1,0 +1,27 @@
+<com.tzh.campushelper.ui.widget.MultiSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tzh.campushelper.ui.widget.MultiRecyclerView
+            android:id="@+id/list"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"/>
+
+        <ScrollView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/empty_view_layout"/>
+        </ScrollView>
+    </FrameLayout>
+
+</com.tzh.campushelper.ui.widget.MultiSwipeRefreshLayout>

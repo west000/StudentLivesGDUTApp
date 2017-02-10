@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, the floating action button should be placed 16dp minimum from the edge on mobile:
+         https://material.google.com/components/buttons-floating-action-button.html -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="course_layout_line_height">120dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="score_layout_item_textSize_small">14sp</dimen>
+    <dimen name="score_layout_item_textSize">15sp</dimen>
+    <dimen name="edu_sys_nav_text_font_size">16dp</dimen>
+    <dimen name="edu_sys_nav_img_size">100dp</dimen>
+    <dimen name="edu_sys_nav_pad">15dp</dimen>
+    <dimen name="edu_sys_nav_elevation">8dp</dimen>
+</resources>
