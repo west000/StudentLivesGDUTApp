@@ -163,10 +163,10 @@ class EducationSystem(object):
     # 查询
     # ###########################################################
     '''
-    成绩查询 xscj.aspx?xh=3114006506&xm=黄伟塨&gnmkdm=N121605
-    等级考试查询 xsdjkscx.aspx?xh=3114006506&xm=黄伟塨&gnmkdm=N121606
-    学生考试查询 xskscx.aspx?xh=3114006506&xm=黄伟塨&gnmkdm=N121604
-    学生个人课表 xskbcx.aspx?xh=3114006506&xm=黄伟塨&gnmkdm=N121603
+    成绩查询 xscj.aspx?xh=学号&xm=姓名&gnmkdm=N121605
+    等级考试查询 xsdjkscx.aspx?xh=学号&xm=姓名&gnmkdm=N121606
+    学生考试查询 xskscx.aspx?xh=学号&xm=姓名&gnmkdm=N121604
+    学生个人课表 xskbcx.aspx?xh=学号&xm=姓名&gnmkdm=N121603
     '''
 
     def getSearchURL(self, project):
@@ -228,7 +228,7 @@ class EducationSystem(object):
             re.S)
         items = re.findall(pattern, html)
         # 		选课课号							课程名称		姓名			考试时间				考试地点	考试形式 座位号 校区
-        # ('(2016-2017-1)-24102920-00006199-2', '算法设计与分析', '黄伟塨', '第9周周2(2016-10-25)第8,9节', '教3-209', '&nbsp;', '7', '大学城校园')
+        # ('(2016-2017-1)-24102920-00006199-2', '算法设计与分析', '姓名', '第9周周2(2016-10-25)第8,9节', '教3-209', '&nbsp;', '7', '大学城校园')
         result = []
         for item in items:
             exam = ExamTime(item[0],item[1],item[2],item[3],item[4],item[5],item[6],item[7])
@@ -381,12 +381,10 @@ if __name__ == '__main__':
     orc.initOrc()
     # 输入学号: 3114006532
     # 输入密码: 3695147asd++
-    userID = input('输入学号: ')  # '3114006506'
-    pwd = input('输入密码: ')  # 'Westlife705312'
+    userID = input('输入学号: ') 
+    pwd = input('输入密码: ') 
     userID = '3114006532'
     pwd = '3695147asd++'
-    userID = '3114006506'
-    pwd = 'Westlife705312'
     userID = '3114006507'
     pwd = 'unique82512'
     gdut = EducationSystem()
